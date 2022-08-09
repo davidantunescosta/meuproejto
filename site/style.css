@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/*resetando CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+
+.cabecalho {
+  /*display flex, é para . que vai começar a usar o flexbox*/
+  display: flex;
+  flex-direction: row; /*Para alinha itens horizontalmente*/
+  align-items: center;
+  justify-content: space-around; /*modo do espaçamento dentre os itens*/
+  padding: 24px; /*Desgrudar o logo da parte de cima do site*/
+}
+
+.cabecalho-imagem {
+  height: 72px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px; /*o gap ele coloca a distância dos elementos*/
+}
+
+.cabecalho-menu-item {
+  font-family: "Sarala" sans-serif;
+  color: #fff2ef;
+  font-weight: 400; /*Quanto mairo número mais a fonte fica escruta "negrito"*/
+  font-size: 18px;
+}
+
+.conteudo {
+  margin-bottom: 48px; /*magin do footer e dos parafragos separando eles */
+  border-top: 0.4px solid #fff2ef; /*faz uma pequena borda no TOPO - No site é a linha do menu*/
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row; /*Coloas em horizontal em LINHAS*/
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column; /*Vai fica em coluna, em vertical*/
+  gap: 32px; /*o gap ele coloca a distância dos elementos*/
+}
+
+.conteudo-principal-titulo {
+  font-family: "Righteous" cursive;
+  font-weight: 400px; /*Quanto mairo número mais a fonte fica escruta "negrito"*/
+  font-size: 64px;
+  color: #fff2ef;
+}
+
+.conteudo-principal-subtitulo {
+  font-family: "Sarala" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ecd6c4;
+}
+
+.conteudo-principal-botao {
+  background-color: #ecd6c4;
+  width: 180px; /*Que é a largura*/
+  height: 60px; /*Que é a altura*/
+  border: none;
+  box-shadow: 4px 5px 4px black;
+  border-radius: 20px;
+  font-family: "Sarala" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2f2325;
+}
+
+.conteudo-principal-botao:hover {
+  background-color: rgba(
+    236,
+    214,
+    196,
+    0.53
+  ); /*hover para fazer animação, para quando passar o mouse em cima*/
+}
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #fff2ef;
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2ef;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: "Sarala", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ecd6c4;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #fff2ef;
+}
+
+.rodape-imagem {
+  height: 48px;
+  display: block; /*Ele pega imagem e coloca como bloco*/
+  margin: 0 auto;
+}
